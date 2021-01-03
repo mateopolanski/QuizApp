@@ -1,0 +1,118 @@
+:root {
+
+    background: rgb(34,193,195);
+    background: linear-gradient(270deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    font-size: 62.5%; /* 10 pixels rem fefference to this value */
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
+    /* Text outline for better font visibility */
+}
+
+h1
+h2
+h3
+h4 {
+    margin-bottom: 1rem;
+    
+}
+
+h1 {
+    font-size: 5.4rem;
+    color:darkgoldenrod;
+    margin-bottom: 5rem;
+
+}
+
+
+h1 > span {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    text-align: center;
+    color: darkgoldenrod;
+    
+}
+
+h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+/* Utilities */
+
+.container{   /*properties of the container when
+                window size is changed */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.container > * {   /* child of container */
+    width: 100%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Buttons */
+
+.btn {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid darkgoldenrod;
+    margin-bottom: 1rem;
+    color: darkgoldenrod;
+    background-color: antiquewhite;
+    text-decoration: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.6rem 1.4rem 0 rgba(175, 92, 14, 0.5);
+    transform: translateY(-0.2rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
